@@ -43,6 +43,7 @@
      width;
      height;
      alt;
+     title;
     }
     class errorType{
         nullOrEmpty = "Element is null or empty"
@@ -93,6 +94,9 @@
         }
         if(elementProperties.id){
             element.id = elementProperties.id;
+        }
+        if(elementProperties.title){
+            element.title = elementProperties.title;
         }
         return element;
     }
